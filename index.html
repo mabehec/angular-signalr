@@ -1,0 +1,32 @@
+<html ng-app ='ic_billetterie'>
+<head>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/controller.js"></script>
+    <script src="./js/factory.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/signalr/jquery.signalr-2.1.0.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular-resource.min.js"></script>
+    <script type="text/javascript" src="http://ticketingreservations.azurewebsites.net/signalr/hubs"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/pure-min.css">
+
+
+</head>
+
+<h1 >test</h1>
+
+<div ng-controller="testCtrl">
+    <div>{{4+4}}</div>
+    <div>{{ 6+6}}</div>
+    <div>{{ 12+12 }}</div>
+</div>
+
+<div ng-controller ="signalar">
+</div>
+
+<div ng-controller ='postTest'></div>
+
+<input ng-model ='eventName'/>
+<div>{{ eventName }}</div>
+<button type ='submit' ng-click="createEvent()">test</button>
+</html>
